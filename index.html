@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Validation Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form id="form">    <!-- id use in JS file -->
+            <div id="main">
+                <h2>Validation Form</h2>
+                <div id="Validation">
+                    <label>Name:</label>
+                    <input type="text" id="name" placeholder="Enter Name" required> 
+                    <!-- <div id="nameError" style="color: red;"></div> -->
+    
+                    <label>Email:</label>
+                    <input type="email" id="email" placeholder="Enter Email" required>
+                    <!-- <div id="mailError" style="color: red;"></div> -->
+    
+                    <label>Details:</label>     
+                    <textarea type="text" id="details" rows="2" cols="30"  minlength="2" maxlength="500" placeholder="Enter something" required></textarea>
+
+                    <label>Password:</label>
+                    <input type="password" id="password" placeholder="Enter Password"  required>
+    
+                    <label>Confirm Password:</label>
+                    <input type="password" id="confpass" placeholder="Confirm Password"  required>
+                    <!-- <div id="confpassError" style="color: red;"></div> -->
+    
+                    <label>Age:</label>
+                    <input type="number" id="age" placeholder="Enter Age" minlength="1" maxlength="100" required>
+    
+                    <label>Birth Date:</label>
+                    <input type="date" id="birth-date" required>
+    
+                    <div class="gender">
+                        <label>Gender:</label>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label>Male</label>
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label>Female</label>
+                    </div>
+        
+                    <div class="box">
+                        <input type="checkbox" id="checkbox" required>
+                        <label>I  accept all terms and conditions.</label>
+                    </div>
+    
+                    <div id="buttons">
+                        <input type="submit" class="btn" id="submit_btn" value="Submit">
+                        <input type="button" class="btn" id="cancle_btn" onclick="reset()" value="Cancel">
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <script src="script.js"></script>
+    </body>
+</html>
+

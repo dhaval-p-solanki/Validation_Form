@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main container */
+#main {
+    background-color: #3cd6dc;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    /* box-shadow: gray; */
+    width: 400px;
+    padding: 20px;
+    height: 100vh;
+}
+
+/* Header */
+h2 {
+    text-align: center;
+    margin-bottom: 17px;
+    color: #333;
+}
+
+/* All Labels */
+#Validation label {
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+/* Input and textarea */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn{
+    width: 45%;
+    padding: 10px;
+    margin: 8px 2%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn {
+    background-color: #007bff;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+
+#cancle_btn {
+    background-color: #6c757d;
+}
+#cancle_btn:hover {
+    background-color: #5a5f63;
+}
+
+.gender {
+    display: flex;
+}
+
+#gender label,input {
+    margin-right: -10px;
+}
+
+.box{
+    display: flex;
+    gap: -5px;
+}
+
+.box,label,input{
+    margin-right: -10px;   
+}
+
+#checkbox{
+    height: 15px;
+    width: 15px;
+    margin-right: 4px;
+    margin-top: 2px;
+}
